@@ -50,4 +50,4 @@ I am a 21 y.o. student who aim to become the best front-end developer :)
 3. [CSS for beginners](https://ru.code-basics.com/languages/css)
 4. [Javarush](https://javarush.ru/)
 
-##  My english level - A2
+##  My english level - A2+
