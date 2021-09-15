@@ -43,7 +43,7 @@ I am a 21 y.o. student who aim to become the best front-end developer :)
 
 ### Unfortunately I don't have any work experience yet :c
 
-## My ducation:
+## My education:
 
 1. [Modern JavaScript Tutorial](https://learn.javascript.ru/)
 2. [HTML for beginners](https://ru.code-basics.com/languages/html)
