@@ -12,7 +12,9 @@
     "stylelint-order": "^4.1.0"
   },
   "scripts": {
-    "test": "htmlhint path/to/html/files/*.html"
+    "test": "htmlhint *.html",
+    "stylelint": "stylelint **/*.css",
+    "stylelint:fix": "stylelint **/*.css --fix"
   },
   "repository": {
     "type": "git",
