@@ -6,14 +6,15 @@
   margin: 0;
   font-family: "Roboto Slab", serif;
 
-  --body-bg-color: #add8e6;
-  --main-bg-color: #ffffff;
-  --secondary-color: #003147;
+  --body-bg-color: #102027;
+  --main-bg-color: #37474f;
+  --secondary-color: #263238;
   --aside-text-color: #ffffff;
-  --accent-color: #03a9f4;
-  --lng-line-bg-color: #081921;
-  --fade-text-color: #848c90;
-  --skills-line-bg-color: #f0f0f0;
+  --accent-color: #ffab00;
+  --main-text-color: #e2f1f8;
+  --fade-text-color: #b0bec5;
+  --line-color: #4f5b62;
+  --r-title-color: #eceff1;
 }
 
 body {
@@ -28,12 +29,12 @@ body {
   position: relative;
   display: grid;
   width: 100%;
-  min-width: 340px;
+  min-width: 300px;
   max-width: 1000px;
   min-height: 1000px;
   margin: 50px;
   background: var(--main-bg-color);
-  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
   grid-template-columns: 1fr 2fr;
 }
 
@@ -50,7 +51,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding-bottom: 20px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid var(--line-color);
 }
 
 .profile .image-wrapper {
@@ -110,7 +111,7 @@ body {
 .contacts ul li .icon {
   display: inline-block;
   width: 30px;
-  color: #03a9f4;
+  color: var(--accent-color);
   font-size: 18px;
 }
 
@@ -147,7 +148,7 @@ body {
   width: 100%;
   height: 6px;
   margin-top: 5px;
-  background: var(--lng-line-bg-color);
+  background: var(--line-color);
 }
 
 .contacts.languages .percent div {
@@ -174,12 +175,12 @@ body {
 
 .right-title {
   margin-bottom: 10px;
-  color: var(--secondary-color);
+  color: var(--r-title-color);
   text-transform: uppercase;
 }
 
 p {
-  color: #333333;
+  color: var(--main-text-color);
 }
 
 .about-me .box {
@@ -219,7 +220,7 @@ p {
   position: relative;
   width: 100%;
   height: 10px;
-  background: var(--skills-line-bg-color);
+  background: var(--line-color);
 }
 
 .my-skills .box .percent div {
@@ -239,7 +240,7 @@ p {
 
 .my-interests ul li {
   margin: 10px 10px;
-  color: #333333;
+  color: var(--main-text-color);
   font-weight: 500;
   list-style: none;
 }
@@ -247,6 +248,38 @@ p {
 .my-interests ul li .fas {
   color: var(--accent-color);
   font-size: 18px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 25px;
+  border-top: 1px solid var(--line-color);
+  color: var(--fade-text-color);
+}
+
+footer > * {
+  margin-top: 5px;
+}
+
+footer a {
+  color: var(--fade-text-color);
+  font-size: 15px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--accent-color);
+  fill: #ffab00;
+}
+
+.rsschool {
+  fill: #b0bec5ff;
+}
+
+.rsschool:hover {
+  fill: #ffab00ff;
 }
 
 @media (max-width: 1000px) {
@@ -279,11 +312,12 @@ p {
   }
 }
 
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 40px;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  color: var(--secondary-color);
+@media (max-width: 400px) {
+  .main-container .left-column {
+    padding: 20px;
+  }
+
+  .main-container .right-column {
+    padding: 20px;
+  }
 }
