@@ -19,6 +19,7 @@ body {
   position: relative;
   display: grid;
   width: 100%;
+  min-width: 340px;
   max-width: 1000px;
   min-height: 1000px;
   margin: 50px;
@@ -165,7 +166,6 @@ body {
 .right-title {
   margin-bottom: 10px;
   color: #003147;
-  text-decoration: underline;
   text-transform: uppercase;
 }
 
@@ -210,5 +210,62 @@ p {
   position: relative;
   width: 100%;
   height: 10px;
-  background: #ff0000;
+  background: #f0f0f0;
+}
+
+.my-skills .box .percent div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #03a9f4;
+}
+
+.my-interests ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /*align-items: center;*/
+}
+
+.my-interests ul li {
+  margin: 10px 10px;
+  color: #333333;
+  font-weight: 500;
+  list-style: none;
+}
+
+.my-interests ul li .fas {
+  color: #03a9f4;
+  font-size: 18px;
+}
+
+@media (max-width: 1000px) {
+  .main-container {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  .main-container {
+    margin: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .about-me .box {
+    flex-direction: column;
+  }
+
+  .about-me .box .project-info {
+    margin-bottom: 5px;
+  }
+
+  .my-skills .box {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
