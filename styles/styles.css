@@ -80,7 +80,7 @@ body {
   padding-top: 40px;
 }
 
-.title {
+.left-title {
   margin-bottom: 20px;
   font-weight: 600;
   letter-spacing: 1px;
@@ -105,9 +105,9 @@ body {
 }
 
 .contacts ul li a {
+  color: #ffffff;
   font-weight: 300;
   text-decoration: none;
-  color: #ffffff;
 }
 
 .contacts ul li a:hover {
@@ -151,5 +151,42 @@ body {
 .main-container .right-column {
   position: relative;
   padding: 40px;
+  background: #ffffff;
 }
 
+.about-me {
+  margin-bottom: 50px;
+}
+
+.about-me:last-child {
+  margin-bottom: 0;
+}
+
+.right-title {
+  margin-bottom: 10px;
+  color: #003147;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+p {
+  color: #333333;
+}
+
+.about-me .box {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+
+.about-me .box .project-info {
+  min-width: 120px;
+  color: #848c90;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.about-me .box .text h4 {
+  color: #2a7da2;
+  text-transform: uppercase;
+}
