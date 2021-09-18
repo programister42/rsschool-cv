@@ -190,3 +190,25 @@ p {
   color: #2a7da2;
   text-transform: uppercase;
 }
+
+.my-skills .box {
+  position: relative;
+  display: grid;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 120px 1fr;
+}
+
+.my-skills .box h4 {
+  color: #848c99;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.my-skills .box .percent {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background: #ff0000;
+}

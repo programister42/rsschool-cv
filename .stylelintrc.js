@@ -7,5 +7,6 @@ module.exports = {
   "plugins":
     [
       "stylelint-order"
-    ]
+    ],
+  "rules": {}
 };
