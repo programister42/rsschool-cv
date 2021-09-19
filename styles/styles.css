@@ -5,6 +5,7 @@
   padding: 0;
   margin: 0;
   font-family: "Roboto Slab", serif;
+  scroll-behavior: smooth;
 
   --body-bg-color: #102027;
   --main-bg-color: #37474f;
@@ -23,6 +24,28 @@ body {
   align-items: center;
   justify-content: center;
   background: var(--body-bg-color);
+}
+
+.burger-menu {
+  position: fixed;
+  top: 100px;
+  left: 50px;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  /*justify-content: center;*/
+}
+
+.burger-menu a {
+  margin: 16px;
+  color: var(--line-color);
+  font-weight: 900;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.burger-menu a:active {
+  color: var(--accent-color);
 }
 
 .main-container {
