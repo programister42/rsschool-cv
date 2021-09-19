@@ -30,21 +30,27 @@ body {
   position: fixed;
   top: 100px;
   left: 50px;
-  display: flex;
   height: 100vh;
-  flex-direction: column;
-  /*justify-content: center;*/
 }
 
-.burger-menu a {
+.burger-menu ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.burger-menu ul li {
   margin: 16px;
+  list-style: none;
+}
+
+.burger-menu ul li a {
   color: var(--line-color);
   font-weight: 900;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-.burger-menu a:active {
+.burger-menu ul li a:active {
   color: var(--accent-color);
 }
 
