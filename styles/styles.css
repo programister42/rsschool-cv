@@ -34,7 +34,7 @@ body {
   min-height: 1000px;
   margin: 50px;
   background: var(--main-bg-color);
-  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2), 0 0 100000px rgba(255, 171, 0, 0.16);
   grid-template-columns: 1fr 2fr;
 }
 
@@ -78,6 +78,7 @@ body {
   letter-spacing: 0.2em;
   line-height: 1.4em;
   text-align: center;
+  text-shadow: 0 9px 12px rgba(0, 0, 0, 0.14), 0 3px 16px rgba(0, 0, 0, 0.12), 0 5px 6px rgba(0, 0, 0, 0.2);
   text-transform: uppercase;
 }
 
@@ -176,6 +177,7 @@ body {
 .right-title {
   margin-bottom: 10px;
   color: var(--r-title-color);
+  text-shadow: 0 6px 10px rgba(0, 0, 0, 0.14), 0 1px 18px rgba(0, 0, 0, 0.12), 0 3px 5px rgba(0, 0, 0, 0.2);
   text-transform: uppercase;
 }
 
