@@ -8,10 +8,26 @@
   </head>
   <body>
 
-    <script src="https://kit.fontawesome.com/309c53cb0e.js" crossorigin="anonymous"></script>
+    <nav class="burger-menu">
+      <ul>
+        <li><a class="menu-link" data-goto="#contacts" href="#">contacts</a></li>
+        <li><a class="menu-link" data-goto="#education" href="#">education</a></li>
+        <li><a class="menu-link" data-goto="#languages" href="#">languages</a></li>
+        <li><a class="menu-link" data-goto="#about" href="#">about</a></li>
+        <li><a class="menu-link" data-goto="#projects" href="#">projects</a></li>
+        <li><a class="menu-link" data-goto="#skills" href="#">skills</a></li>
+        <li><a class="menu-link" data-goto="#interests" href="#">interests</a></li>
+      </ul>
+    </nav>
 
     <main class="main-container">
       <aside class="left-column">
+
+        <header class="mini-header">
+          <div class="menu-icon">
+            <span></span>
+          </div>
+        </header>
 
         <div class="profile">
           <div class="image-wrapper">
@@ -20,7 +36,7 @@
           <h1>Taras Tereschenko<br><span>Front-End Developer</span></h1>
         </div>
 
-        <div class="contacts">
+        <div id="contacts" class="contacts">
           <h3 class="left-title">Contacts:</h3>
           <ul>
             <li>
@@ -47,7 +63,7 @@
           </ul>
         </div>
 
-        <div class="contacts education">
+        <div id="education" class="contacts education">
           <h3 class="left-title">Education:</h3>
           <ul>
             <li>
@@ -63,7 +79,7 @@
           </ul>
         </div>
 
-        <div class="contacts languages">
+        <div id="languages" class="contacts languages">
           <h3 class="left-title">Languages:</h3>
           <ul>
             <li>
@@ -89,7 +105,8 @@
       </aside>
 
       <section class="right-column">
-        <div class="about-me"><h2 class="right-title">About Me:</h2>
+        <div id="about" class="about-me">
+          <h2 class="right-title">About Me:</h2>
           <p>
             I am 22 years old and want to become a valued expert in web and mobile development.
             I studied at the Belarusian State University of Informatics and Radioelectronics,
@@ -100,7 +117,7 @@
           </p>
         </div>
 
-        <div class="about-me">
+        <div id="projects" class="about-me">
           <h2 class="right-title">My Projects:</h2>
 
           <div class="box">
@@ -110,7 +127,8 @@
             </div>
             <div class="text">
               <h4>Param-chat</h4>
-              <p>An Android application that can answer simple questions and maintain a dialogue, show the weather, date
+              <p>An Android application that can answer simple questions and maintain a dialogue, show the weather,
+                date
                 and time upon request, and also it can tell an aphorism.</p>
             </div>
           </div>
@@ -128,7 +146,7 @@
           </div>
         </div>
 
-        <div class="about-me my-skills">
+        <div id="skills" class="about-me my-skills">
           <h2 class="right-title">Professional skills:</h2>
 
           <div class="box">
@@ -188,7 +206,7 @@
           </div>
         </div>
 
-        <div class="about-me my-interests">
+        <div id="interests" class="about-me my-interests">
           <h2 class="right-title">My interests:</h2>
           <ul>
 
@@ -251,5 +269,8 @@
 
       </section>
     </main>
+
+    <script src="https://kit.fontawesome.com/309c53cb0e.js" crossorigin="anonymous"></script>
+    <script src="scripts/nav.js"></script>
   </body>
 </html>
