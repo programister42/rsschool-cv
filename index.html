@@ -104,8 +104,8 @@
         </div>
       </aside>
 
-      <section class="right-column">
-        <div id="about" class="about-me">
+      <div class="right-column">
+        <article id="about" class="about-me">
           <h2 class="right-title">About Me:</h2>
           <p>
             I am 22 years old and want to become a valued expert in web and mobile development.
@@ -115,9 +115,15 @@
             After that I decided to focus on self-study and continued to learn web development.
             I am currently studying basic development tools and languages for a junior developer position.
           </p>
-        </div>
 
-        <div id="projects" class="about-me">
+          <div class="video-wrapper">
+            <h3>A few words about me</h3>
+            <iframe src="https://www.youtube.com/embed/14GZBa5oNMw" title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+          </div>
+        </article>
+
+        <article id="projects" class="about-me">
           <h2 class="right-title">My Projects:</h2>
 
           <div class="box">
@@ -144,69 +150,88 @@
                 implemented a quest for my girlfriend's birthday on this platform).</p>
             </div>
           </div>
-        </div>
+        </article>
 
-        <div id="skills" class="about-me my-skills">
+        <article id="skills" class="about-me my-skills">
           <h2 class="right-title">Professional skills:</h2>
 
-          <div class="box">
-            <h4>HTML</h4>
-            <div class="percent">
-              <div style="width: 80%"></div>
-            </div>
+          <ul>
+            <li class="box">
+              <h4>HTML</h4>
+              <div class="percent">
+                <div style="width: 80%"></div>
+              </div>
+            </li>
+
+            <li class="box">
+              <h4>CSS</h4>
+              <div class="percent">
+                <div style="width: 80%"></div>
+              </div>
+            </li>
+
+            <li class="box">
+              <h4>JavaScript</h4>
+              <div class="percent">
+                <div style="width: 30%"></div>
+              </div>
+            </li>
+
+            <li class="box">
+              <h4>C/C++</h4>
+              <div class="percent">
+                <div style="width: 70%"></div>
+              </div>
+            </li>
+
+            <li class="box">
+              <h4>Java</h4>
+              <div class="percent">
+                <div style="width: 35%"></div>
+              </div>
+            </li>
+
+            <li class="box">
+              <h4>Android</h4>
+              <div class="percent">
+                <div style="width: 30%"></div>
+              </div>
+            </li>
+
+            <li class="box">
+              <h4>Git</h4>
+              <div class="percent">
+                <div style="width: 85%"></div>
+              </div>
+            </li>
+
+            <li class="box">
+              <h4>Figma</h4>
+              <div class="percent">
+                <div style="width: 45%"></div>
+              </div>
+            </li>
+          </ul>
+
+          <div class="cod_wrapper">
+            <pre id="#cod-id" class="prettyprint"
+                 style="background: #263238">
+// Code Example:
+
+const menuButton = document.querySelector('.mini-header')
+const menu = document.querySelector('.burger-menu')
+if (menuButton) {
+  menuButton.addEventListener("click", function () {
+    document.body.classList.toggle('_lock')
+    menuButton.classList.toggle('_active')
+    menu.classList.toggle('_active')
+  })
+}            </pre>
           </div>
 
-          <div class="box">
-            <h4>CSS</h4>
-            <div class="percent">
-              <div style="width: 80%"></div>
-            </div>
-          </div>
+        </article>
 
-          <div class="box">
-            <h4>JavaScript</h4>
-            <div class="percent">
-              <div style="width: 30%"></div>
-            </div>
-          </div>
-
-          <div class="box">
-            <h4>C/C++</h4>
-            <div class="percent">
-              <div style="width: 70%"></div>
-            </div>
-          </div>
-
-          <div class="box">
-            <h4>Java</h4>
-            <div class="percent">
-              <div style="width: 35%"></div>
-            </div>
-          </div>
-
-          <div class="box">
-            <h4>Android</h4>
-            <div class="percent">
-              <div style="width: 30%"></div>
-            </div>
-          </div>
-
-          <div class="box">
-            <h4>Git</h4>
-            <div class="percent">
-              <div style="width: 85%"></div>
-            </div>
-          </div>
-
-          <div class="box">
-            <h4>Figma</h4>
-            <div class="percent">
-              <div style="width: 45%"></div>
-            </div>
-          </div>
-        </div>
-
-        <div id="interests" class="about-me my-interests">
+        <article id="interests" class="about-me my-interests">
           <h2 class="right-title">My interests:</h2>
           <ul>
 
@@ -242,7 +267,7 @@
             </li>
 
           </ul>
-        </div>
+        </article>
 
         <footer>
           <a href="https://rs.school/js/">
@@ -267,9 +292,11 @@
           <h5>2021</h5>
         </footer>
 
-      </section>
+      </div>
     </main>
 
+    <script
+      src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=sunburst"></script>
     <script src="https://kit.fontawesome.com/309c53cb0e.js" crossorigin="anonymous"></script>
     <script src="scripts/nav.js"></script>
   </body>
