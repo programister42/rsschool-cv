@@ -10,13 +10,13 @@ if (menuButton) {
   })
 }
 
-const navLinks = document.querySelectorAll('.menu-link')
+const navLinks = document.querySelectorAll('.menu-link[data-goto]')
 if (navLinks.length > 0) {
   navLinks.forEach(navLink => {
-    navLink.addEventListener("click", onMenuLinkClick)
+    navLink.addEventListener("click", onNavLinkClick)
   })
 
-  function onMenuLinkClick(e) {
+  function onNavLinkClick(e) {
     const navLink = e.target
 
     if (navLink.dataset.goto && document.querySelector(navLink.dataset.goto)) {
@@ -28,7 +28,15 @@ if (navLinks.length > 0) {
         behavior: "smooth",
       })
 
-      e.preventDefault();
+      e.preventDefault()
+
+      navLinks.forEach(navLink => {
+        if (navLink.parentElement.classList.contains('_selected')) {
+          navLink.parentElement.classList.remove('_selected')
+        }
+      })
+      navLink.parentElement.classList.toggle('_selected')
+
     }
 
     if (menuButton.classList.contains('_active')) {

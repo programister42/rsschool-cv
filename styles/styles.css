@@ -39,7 +39,7 @@ body._lock {
   z-index: 10;
   top: 0;
   left: 0;
-  height: 100vh;
+  height: 100%;
   margin: 100px 50px;
 }
 
@@ -49,8 +49,19 @@ body._lock {
 }
 
 .burger-menu ul li {
-  margin: 16px;
+  padding: 16px;
   list-style: none;
+  transition: all 0.3s ease 0s;
+}
+
+.burger-menu ul li._selected {
+  background: rgba(255, 171, 0, 0.1);
+  border-radius: 100px;
+  transition: all 0.3s ease 0s;
+}
+
+.burger-menu ul li._selected a {
+  color: var(--accent-color);
 }
 
 .burger-menu ul li a {
@@ -58,6 +69,7 @@ body._lock {
   font-weight: 800;
   text-decoration: none;
   text-transform: uppercase;
+  transition: all 0.3s ease 0s;
 }
 
 .burger-menu ul li a:hover {
