@@ -13,8 +13,8 @@
   --aside-text-color: #ffffff;
   --accent-color: #ffab00;
   --main-text-color: #e2f1f8;
-  --fade-text-color: #b0bec5;
-  --line-color: #4f5b62;
+  --fade-text-color: #90a4ae;
+  --line-color: #455a64;
   --r-title-color: #eceff1;
 }
 
@@ -250,8 +250,8 @@ p {
 }
 
 .video-wrapper h3 {
-  padding: 15px;
-  color: var(--fade-text-color);
+  padding: 15px 20px 0 20px;
+  color: var(--main-text-color);
   font-size: 15px;
   font-weight: 500;
   text-transform: uppercase;
@@ -260,7 +260,7 @@ p {
 .video-wrapper iframe {
   width: 100%;
   height: 250px;
-  padding: 20px;
+  padding: 15px;
 }
 
 .about-me .box .project-info {
@@ -304,6 +304,17 @@ p {
   height: 100%;
   background: var(--accent-color);
 }
+
+.cod_wrapper {
+  padding-top: 10px;
+}
+
+pre {
+  width: 100%;
+  font-size: 13px;
+  overflow-x: auto;
+}
+
 
 .my-interests ul {
   display: flex;

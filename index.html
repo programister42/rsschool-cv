@@ -105,7 +105,7 @@
       </aside>
 
       <section class="right-column">
-        <div id="about" class="about-me">
+        <article id="about" class="about-me">
           <h2 class="right-title">About Me:</h2>
           <p>
             I am 22 years old and want to become a valued expert in web and mobile development.
@@ -122,9 +122,9 @@
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
           </div>
-        </div>
+        </article>
 
-        <div id="projects" class="about-me">
+        <article id="projects" class="about-me">
           <h2 class="right-title">My Projects:</h2>
 
           <div class="box">
@@ -151,9 +151,9 @@
                 implemented a quest for my girlfriend's birthday on this platform).</p>
             </div>
           </div>
-        </div>
+        </article>
 
-        <div id="skills" class="about-me my-skills">
+        <article id="skills" class="about-me my-skills">
           <h2 class="right-title">Professional skills:</h2>
 
           <div class="box">
@@ -211,9 +211,26 @@
               <div style="width: 45%"></div>
             </div>
           </div>
-        </div>
 
-        <div id="interests" class="about-me my-interests">
+          <div class="cod_wrapper">
+            <pre id="#cod-id" class="prettyprint"
+                 style="background: #263238">
+// Code Example:
+
+const menuButton = document.querySelector('.mini-header')
+const menu = document.querySelector('.burger-menu')
+if (menuButton) {
+  menuButton.addEventListener("click", function () {
+    document.body.classList.toggle('_lock')
+    menuButton.classList.toggle('_active')
+    menu.classList.toggle('_active')
+  })
+}            </pre>
+          </div>
+
+        </article>
+
+        <article id="interests" class="about-me my-interests">
           <h2 class="right-title">My interests:</h2>
           <ul>
 
@@ -249,7 +266,7 @@
             </li>
 
           </ul>
-        </div>
+        </article>
 
         <footer>
           <a href="https://rs.school/js/">
@@ -277,6 +294,8 @@
       </section>
     </main>
 
+    <script
+      src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=sunburst"></script>
     <script src="https://kit.fontawesome.com/309c53cb0e.js" crossorigin="anonymous"></script>
     <script src="scripts/nav.js"></script>
   </body>
