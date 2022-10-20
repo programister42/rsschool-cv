@@ -1,1 +1,1 @@
-https://Growler42.github.io/rsschool-cv
+https://programister42.github.io/rsschool-cv
